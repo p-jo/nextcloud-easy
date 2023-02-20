@@ -1,0 +1,40 @@
+---
+title: Nextcloud Easy
+name: Nextcloud Easy
+timezone: CET
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+    lang: sv
+- scope:
+    path: en
+    type: pages
+  values:
+    layout: page
+    lang: en
+email: admin@digidemlab.org
+baseurl:
+# url: https://democracyupgraded.org
+author: Digidem Lab
+twitter:
+  username: digidemlab
+facebook:
+  publisher: digidemlab
+logo: "/assets/logotyp.png"
+github_username: p-jo
+repository: digidemlab/communityorganising.se
+plugins:
+- jemoji
+- jekyll-seo-tag
+- jekyll-menus
+#- jekyll-feed

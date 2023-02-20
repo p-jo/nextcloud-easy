@@ -1,0 +1,28 @@
+<section class="section" id="prices">
+  <div class="container">
+    <div class="prices">
+      <div class="columns is-centered">
+        <div class="column is-10-tablet is-full-desktop is-8-widescreen">
+          <h2 class="title is-5 is-size-4-tablet is-size-3-desktop is-size-2-widescreen has-text-centered">{{page.prices[0].title}}</h2>
+          {% for item in page.prices[0]items %}
+            <div class="columns is-desktop is-vcentered">
+              <div class="column">
+                <figure class="image">
+                  <img src="{{site.baseurl}}{{item.icon}}">
+                </figure>
+              </div>
+              <div class="column">
+                <h3 class="title is-6">{{item.title}}</h3>
+                <ul>
+                  {% for item in item.items %}
+                    <li>{{item.text}}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
