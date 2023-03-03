@@ -23,7 +23,7 @@ defaults:
     layout: page
     lang: en
 email: admin@digidemlab.org
-baseurl:
+baseurl: "/nextcloud-easy"
 # url: https://democracyupgraded.org
 author: Digidem Lab
 twitter:
